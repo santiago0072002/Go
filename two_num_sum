@@ -17,3 +17,6 @@ func twoSum(nums []int, target int) []int {
     }
     return []int{}
 }
+
+source help: 
+https://levelup.gitconnected.com/two-number-sum-in-golang-355627d6c861
