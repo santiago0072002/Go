@@ -1,0 +1,24 @@
+// Given an integer x, return true if x is palindrome integer.
+
+// An integer is a palindrome when it reads the same backward as forward.
+
+// For example, 121 is a palindrome while 123 is not.
+
+
+
+func isPalindrome(x int) bool {
+    var sum int = 0
+    var compare = x
+    for x > 0 {
+        r := x % 10
+        sum = (sum*10) + r
+        x = x/10
+        
+    }
+    if compare == sum {
+        return true
+    }
+    return false
+}
+
+// source: https://leetcode.com/problems/palindrome-number/discuss/1727838/golang-palindrome-solution
